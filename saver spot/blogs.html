@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>SaverSpot Blogs - Shopping Tips, Deals & Reviews | 2025</title>
+
+<!-- Essential Google SEO Meta Tags -->
+<meta name="description" content="Read the latest shopping tips, deal alerts, and product reviews from SaverSpot. Get expert advice on saving money while shopping online in India.">
+<meta name="keywords" content="shopping blog, deal alert, product reviews, saving tips, India, SaverSpot, online shopping guide">
+<meta name="author" content="SaverSpot">
+
+<!-- Canonical URL - essential for SEO -->
+<link rel="canonical" href="https://thesaverspot.in/blogs.html">
+
+<!-- Robots directive -->
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<!-- Basic Open Graph for social sharing -->
+<meta property="og:title" content="SaverSpot Blogs - Shopping Tips & Reviews">
+<meta property="og:description" content="Read the latest shopping guides, deal alerts, and product reviews from SaverSpot. Expert advice on saving money in India.">
+<meta property="og:image" content="https://thesaverspot.in/images/saverspot_logo2.png">
+<meta property="og:url" content="https://thesaverspot.in/blogs.html">
+<meta property="og:type" content="website">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --primary: #00e5ff;
+  --secondary: #ffeb3b;
+  --dark: #333;
+  --light: #f9f9f9;
+  --accent: #ff4081;
+  
+  /* Adding complementary shades for gradients */
+  --primary-dark: #00b8d4;
+  --primary-light: #80f9ff;
+  --secondary-dark: #c8ba00;
+  --accent-dark: #c51162;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+header {
+  /* More subtle gradient */
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  padding: 0.5rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center; /* Change from space-between to center */
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  width: 300px;
+  height: auto;
+  transition: all 0.3s ease;
+  margin-top: 17px;
+}
+
+.logo-link {
+  display: block;
+  text-decoration: none;
+}
+
+header.scrolled {
+  padding: 0.3rem 0;
+  height: 50px;
+  /* More transparent version of the same gradient */
+  background: linear-gradient(135deg, rgba(0, 229, 255, 0.95), rgba(0, 184, 212, 0.95));
+  backdrop-filter: blur(8px);
+}
+
+header.scrolled .logo {
+  width: 200px;
+  margin-top: 12px;
+}
+
+.blog-hero {
+  /* Same gradient as header for consistency */
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  padding: 3rem 0;
+  text-align: center;
+  color: var(--dark);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  /* Improved text contrast */
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.search-container {
+  display: flex;
+  max-width: 500px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+
+#search-input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 2px solid #ddd;
+  border-right: none;
+  border-radius: 30px 0 0 30px;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+#search-input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+#search-button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0 1.5rem;
+  border-radius: 0 30px 30px 0;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(255, 64, 129, 0.2);
+  transition: all 0.2s ease;
+}
+
+#search-button:hover {
+  background: var(--accent-dark);
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.category-button {
+  background-color: white;
+  color: var(--dark);
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  border: 2px solid var(--primary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.category-button.active, .category-button:hover {
+  background-color: var(--primary);
+  color: var(--dark);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+footer {
+  /* More sophisticated gradient */
+  background: linear-gradient(135deg, var(--primary-dark), #0091a8);
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: 2rem;
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.08);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-icon {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.social-icon:hover {
+  background-color: var(--secondary);
+  transform: translateY(-5px);
+  color: var(--dark);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.copyright {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Blog Section Styles */
+.blog-section {
+  padding: 3rem 0;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 0.8rem;
+  color: var(--dark);
+}
+
+.section-description {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 1.5rem; /* Change from 3rem to 1.5rem */
+}
+
+.blog-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.04);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.blog-image {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.blog-category {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: var(--dark);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  align-self: flex-start;
+}
+
+.blog-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+  color: var(--dark);
+  line-height: 1.4;
+}
+
+.blog-excerpt {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.blog-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #888;
+  font-size: 0.85rem;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.blog-date {
+  display: flex;
+  align-items: center;
+}
+
+.blog-date i {
+  margin-right: 0.4rem;
+}
+
+.blog-views {
+  display: flex;
+  align-items: center;
+}
+
+.blog-views i {
+  margin-right: 0.4rem;
+}
+
+.blog-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.2s ease;
+  margin-top: 1rem;
+}
+
+.blog-link i {
+  margin-left: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.blog-link:hover {
+  color: var(--accent-dark);
+}
+
+.blog-link:hover i {
+  transform: translateX(4px);
+}
+
+/* Featured Article Styles */
+.featured-article {
+  background: linear-gradient(135deg, rgba(0, 229, 255, 0.1), rgba(0, 184, 212, 0.15));
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  display: flex;
+  gap: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border: 1px solid rgba(0, 229, 255, 0.2);
+}
+
+.featured-image {
+  flex: 0 0 40%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.featured-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.featured-image:hover img {
+  transform: scale(1.05);
+}
+
+.featured-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-tag {
+  display: inline-block;
+  background: var(--secondary);
+  color: var(--dark);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  align-self: flex-start;
+}
+
+.featured-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+  color: var(--dark);
+}
+
+.featured-excerpt {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.featured-meta {
+  display: flex;
+  gap: 1.5rem;
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.featured-date, .featured-author {
+  display: flex;
+  align-items: center;
+}
+
+.featured-date i, .featured-author i {
+  margin-right: 0.5rem;
+  color: var(--primary-dark);
+}
+
+.featured-link {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(255, 64, 129, 0.2);
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.featured-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(255, 64, 129, 0.3);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem 0 1rem; /* Change from 3rem to 1rem */
+}
+
+.page-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: 500;
+  border: 2px solid #eee;
+  transition: all 0.2s ease;
+}
+
+.page-link:hover, .page-link.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.page-prev, .page-next {
+  width: auto;
+  padding: 0 1rem;
+  border-radius: 20px;
+}
+
+/* Newsletter Section */
+.newsletter {
+  background: linear-gradient(135deg, var(--secondary), var(--secondary-dark));
+  padding: 3rem 0;
+  margin: 4rem 0;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.newsletter-title {
+  color: var(--dark);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.newsletter-description {
+  color: var(--dark);
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+}
+
+.newsletter-form {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  border: none;
+  font-size: 1rem;
+}
+
+.newsletter-input:focus {
+  outline: none;
+}
+
+.newsletter-button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.newsletter-button:hover {
+  background: var(--accent-dark);
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .featured-article {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  
+  .featured-image {
+    flex: 0 0 100%;
+    height: 250px;
+  }
+  
+  .newsletter-form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  .tagline {
+    font-size: 1rem;
+  }
+  
+  .blog-hero {
+    padding: 2rem 0;
+  }
+  
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .featured-title {
+    font-size: 1.5rem;
+  }
+  
+  .newsletter-title {
+    font-size: 1.5rem;
+  }
+  
+  .newsletter-form {
+    flex-direction: column;
+    border-radius: 12px;
+  }
+  
+  .newsletter-input {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+  }
+  
+  .newsletter-button {
+    width: 100%;
+    border-radius: 0 0 12px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .categories {
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 0.5rem;
+    margin: 1rem -0.5rem;
+    padding: 0 0.5rem 0.5rem;
+    width: 100%;
+  }
+  
+  .categories::-webkit-scrollbar {
+    height: 4px;
+  }
+  
+  .categories::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 184, 212, 0.3);
+    border-radius: 4px;
+  }
+  
+  .category-button {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+  
+  .featured-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+</style>
+</head>
+<body>
+<header id="site-header">
+  <div class="container header-content">
+    <div></div> <!-- Empty div for spacing -->
+    <a href="index copy.html" class="logo-link">
+      <img src="saverspot_logo1.png" alt="SaverSpot Logo" class="logo" id="logo">
+    </a>
+    <div></div> <!-- Empty div for spacing -->
+  </div>
+</header>
+
+<section class="blog-hero">
+  <div class="container">
+    <h1>SaverSpot Blog - Tips, Reviews & Guides</h1>
+    <p class="tagline">Expert shopping advice to save you money</p>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search articles...">
+      <button id="search-button"><i class="fas fa-search"></i></button>
+    </div>
+    <div class="categories">
+      <button class="category-button active">All</button>
+      <button class="category-button">Shopping Tips</button>
+      <button class="category-button">Deal Alerts</button>
+      <button class="category-button">Product Reviews</button>
+      <button class="category-button">Buying Guides</button>
+      <button class="category-button">Tech</button>
+      <button class="category-button">Fashion</button>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <!-- Featured Article -->
+  <article class="featured-article">
+    <div class="featured-image">
+      <img src="/api/placeholder/600/400" alt="Summer Savings Guide">
+    </div>
+    <div class="featured-content">
+      <span class="featured-tag">FEATURED</span>
+      <h2 class="featured-title">Ultimate Summer Sale Guide 2025: How to Get the Best Deals</h2>
+      <p class="featured-excerpt">As summer approaches, major retailers across India are launching their biggest sales of the season. Our experts have analyzed pricing trends and compiled insider tips to help you navigate the sales and score the best discounts on everything from electronics to fashion.</p>
+      <div class="featured-meta">
+        <span class="featured-date"><i class="far fa-calendar"></i> April 5, 2025</span>
+        <span class="featured-author"><i class="far fa-user"></i> Priya Sharma</span>
+      </div>
+      <a href="blogs/summer-sale-guide-2025.html" class="featured-link">Read Full Article</a>
+    </div>
+  </article>
+  
+  <!-- Blog Articles Grid -->
+  <section class="blog-section">
+    <div class="blog-grid" id="blog-container">
+      <!-- Blog Article 1 -->
+      <div class="blog-card" data-created-at="2025-04-12">
+        <img src="/api/placeholder/400/250" alt="Electronics Savings" class="blog-image">
+        <div class="blog-content">
+          <span class="blog-category">Shopping Tips</span>
+          <h3 class="blog-title">10 Ways to Save Money on Electronics</h3>
+          <p class="blog-excerpt">Learn the insider secrets to getting the best deals on smartphones, laptops, and other gadgets in 2025.</p>
+          <div class="blog-meta">
+            <span class="blog-date"><i class="far fa-calendar"></i> Apr 12, 2025</span>
+            <span class="blog-views"><i class="far fa-eye"></i> 1.2K</span>
+          </div>
+          <a href="blogs/save-money-electronics.html" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      
+      <!-- Blog Article 2 -->
+      <div class="blog-card" data-created-at="2025-04-10">
+        <img src="/api/placeholder/400/250" alt="Summer Sales" class="blog-image">
+        <div class="blog-content">
+          <span class="blog-category">Deal Alerts</span>
+          <h3 class="blog-title">Best Summer Sale Discounts in 2025</h3>
+          <p class="blog-excerpt">We've rounded up the hottest summer discounts from your favorite brands that you shouldn't miss.</p>
+          <div class="blog-meta">
+            <span class="blog-date"><i class="far fa-calendar"></i> Apr 10, 2025</span>
+            <span class="blog-views"><i class="far fa-eye"></i> 987</span>
+          </div>
+          <a href="blogs/summer-sales-2025.html" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      
+      <!-- Blog Article 3 -->
+      <div class="blog-card" data-created-at="2025-04-08">
+        <img src="/api/placeholder/400/250" alt="Headphones Review" class="blog-image">
+        <div class="blog-content">
+          <span class="blog-category">Product Reviews</span>
+          <h3 class="blog-title">Are Premium Headphones Worth It?</h3>
+          <p class="blog-excerpt">We compare budget-friendly options with high-end models to help you decide where to spend your money.</p>
+          <div class="blog-meta">
+            <span class="blog-date"><i class="far fa-calendar"></i> Apr 8, 2025</span>
+            <span class="blog-views"><i class="far fa-eye"></i> 1.5K</span>
+          </div>
+          <a href="blogs/premium-headphones-review.html" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      
+      <!-- Blog Article 4 -->
+      <div class="blog-card" data-created-at="2025-04-06">
+        <img src="/api/placeholder/400/250" alt="Amazon Sale Tips" class="blog-image">
+        <div class="blog-content">
+          <span class="blog-category">Shopping Tips</span>
+          <h3 class="blog-title">Amazon Great Indian Festival: How to Prepare</h3>
+          <p class="blog-excerpt">Make the most of Amazon's biggest sale with these expert strategies for finding the best deals and beating the rush.</p>
+          <div class="blog-meta">
+            <span class="blog-date"><i class="far fa-calendar"></i> Apr 6, 2025</span>
+            <span class="blog-views"><i class="far fa-eye"></i> 2.3K</span>
+          </div>
+          <a href="blogs/amazon-great-indian-festival-tips.html" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      
+      <!-- Blog Article 5 -->
+      <div class="blog-card" data-created-at="2025-04-03">
+        <img src="/api/placeholder/400/250" alt="5G Phones" class="blog-image">
+        <div class="blog-content">
+          <span class="blog-category">Buying Guides</span>
+          <h3 class="blog-title">Best 5G Phones Under ₹15,000 in 2025</h3>
+          <p class="blog-excerpt">Looking for an affordable 5G smartphone? Here are our top recommendations that offer great performance without breaking the bank.</p>
+          <div class="blog-meta">
+            <span class="blog-date"><i class="far fa-calendar"></i> Apr 3, 2025</span>
+            <span class="blog-views"><i class="far fa-eye"></i> 3.1K</span>
+          </div>
+          <a href="blogs/5g-phones-under-15000.html" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      
+      <!-- Blog Article 6 -->
+      <div class="blog-card" data-created-at="2025-03-30">
+        <img src="/api/placeholder/400/250" alt="Sustainable Fashion" class="blog-image">
+        <div class="blog-content">
+          <span class="blog-category">Fashion</span>
+          <h3 class="blog-title">Sustainable Fashion: Affordable Eco-Friendly Brands</h3>
+          <p class="blog-excerpt">Discover Indian brands that are making stylish, eco-friendly clothing without the premium price tag.</p>
+          <div class="blog-meta">
+            <span class="blog-date"><i class="far fa-calendar"></i> Mar 30, 2025</span>
+            <span class="blog-views"><i class="far fa-eye"></i> 1.8K</span>
+          </div>
+          <a href="blogs/affordable-sustainable-fashion.html" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      
+      <!-- Blog Article 7 -->
+      <div class="blog-card" data-created-at="2025-03-28">
+        <img src="/api/placeholder/400/250" alt="Smart Home Devices" class="blog-image">
+        <div class="blog-content">
+          <span class="blog-category">Tech</span>
+          <h3 class="blog-title">Budget Smart Home Devices That Actually Work</h3>
+          <p class="blog-excerpt">Transform your home with these affordable smart devices that offer excellent functionality without costing a fortune.</p>
+          <div class="blog-meta">
+            <span class="blog-date"><i class="far fa-calendar"></i> Mar 28, 2025</span>
+            <span class="blog-views"><i class="far fa-eye"></i> 2.5K</span>
+          </div>
+          <a href="blogs/budget-smart-home-devices.html" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      
+      <!-- Blog Article 8 -->
+      <div class="blog-card" data-created-at="2025-03-25">
+        <img src="/api/placeholder/400/250" alt="Cashback Apps" class="blog-image">
+        <div class="blog-content">
+          <span class="blog-category">Shopping Tips</span>
+          <h3 class="blog-title">7 Cashback Apps Every Indian Shopper Should Use</h3>
+          <p class="blog-excerpt">These cashback and rewards apps can help you save thousands of rupees annually on your everyday purchases.</p>
+          <div class="blog-meta">
+            <span class="blog-date"><i class="far fa-calendar"></i> Mar 25, 2025</span>
+            <span class="blog-views"><i class="far fa-eye"></i> 4.7K</span>
+          </div>
+          <a href="blogs/best-cashback-apps-india.html" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      
+      <!-- Blog Article 9 -->
+      <div class="blog-card" data-created-at="2025-03-22">
+        <img src="/api/placeholder/400/250" alt="Gaming Laptop Guide" class="blog-image">
+        <div class="blog-content">
+          <span class="blog-category">Buying Guide</span>
+          <h3 class="blog-title">Gaming Laptops: What's Worth Paying Extra For</h3>
+          <p class="blog-excerpt">Not all premium features matter equally. Learn which specs actually improve your gaming experience and which you can safely ignore.</p>
+          <div class="blog-meta">
+            <span class="blog-date"><i class="far fa-calendar"></i> Mar 22, 2025</span>
+            <span class="blog-views"><i class="far fa-eye"></i> 3.3K</span>
+          </div>
+          <a href="blogs/gaming-laptop-buying-guide.html" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Pagination -->
+  <!-- Replace your current pagination div with this -->
+<div class="pagination" id="pagination">
+    <!-- Will be populated by JavaScript -->
+  </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="newsletter">
+  <div class="container">
+    <h2 class="newsletter-title">Subscribe to Our Newsletter</h2>
+    <p class="newsletter-description">Get weekly shopping tips, exclusive deals, and early access to our best sales guides straight to your inbox!</p>
+    <form class="newsletter-form">
+      <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+      <button type="submit" class="newsletter-button">Subscribe</button>
+    </form>
+  </div>
+</section>
+</div>
+
+<footer>
+<div class="container">
+  <div class="social-links">
+    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+  </div>
+  <p class="copyright">© 2025 SaverSpot. All rights reserved.</p>
+</div>
+</footer>
+
+<script>
+    // Handling scroll effect for header
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('site-header');
+      const logo = document.getElementById('logo');
+      
+      if (window.scrollY > 100) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+    
+    // Add the CSS styles for filtered posts
+    const styleElement = document.createElement('style');
+    styleElement.textContent = `
+      .blog-card.filtered {
+        display: none !important;
+      }
+    `;
+    document.head.appendChild(styleElement);
+    
+    // Category filter functionality
+    document.querySelectorAll('.category-button').forEach(button => {
+      button.addEventListener('click', function() {
+        document.querySelectorAll('.category-button').forEach(btn => {
+          btn.classList.remove('active');
+        });
+        this.classList.add('active');
+        
+        const category = this.textContent;
+        filterBlogPosts(category);
+        renderPagination();
+        showPage(1);
+      });
+    });
+    
+    // Implement actual filtering functionality
+    function filterBlogPosts(category) {
+      const blogPosts = document.querySelectorAll('.blog-card');
+      let visibleCount = 0;
+      
+      blogPosts.forEach(post => {
+        const postCategory = post.querySelector('.blog-category').textContent;
+        
+        if (category === 'All' || postCategory === category) {
+          post.classList.remove('filtered');
+          post.dataset.visible = 'true';
+          visibleCount++;
+        } else {
+          post.classList.add('filtered');
+          post.dataset.visible = 'false';
+        }
+      });
+      
+      window.filteredBlogCount = visibleCount;
+      window.totalPages = Math.ceil(visibleCount / BLOGS_PER_PAGE);
+      sortBlogPosts(); // Sort after filtering
+    }
+    
+    // Search functionality
+    document.getElementById('search-button').addEventListener('click', function() {
+      performSearch();
+    });
+    
+    document.getElementById('search-input').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        performSearch();
+      }
+    });
+    
+    function performSearch() {
+      const searchTerm = document.getElementById('search-input').value.trim().toLowerCase();
+      
+      if (searchTerm) {
+        document.querySelectorAll('.category-button').forEach(btn => {
+          btn.classList.remove('active');
+        });
+        document.querySelector('.category-button:first-child').classList.add('active');
+        
+        const blogPosts = document.querySelectorAll('.blog-card');
+        let visibleCount = 0;
+        
+        blogPosts.forEach(post => {
+          const title = post.querySelector('.blog-title').textContent.toLowerCase();
+          const excerpt = post.querySelector('.blog-excerpt').textContent.toLowerCase();
+          const category = post.querySelector('.blog-category').textContent.toLowerCase();
+          
+          if (title.includes(searchTerm) || excerpt.includes(searchTerm) || category.includes(searchTerm)) {
+            post.classList.remove('filtered');
+            post.dataset.visible = 'true';
+            visibleCount++;
+          } else {
+            post.classList.add('filtered');
+            post.dataset.visible = 'false';
+          }
+        });
+        
+        window.filteredBlogCount = visibleCount;
+        window.totalPages = Math.ceil(visibleCount / BLOGS_PER_PAGE);
+        
+        if (visibleCount === 0) {
+          alert('No results found for "' + searchTerm + '"');
+        }
+        
+        renderPagination();
+        showPage(1);
+        sortBlogPosts(); // Sort after searching
+      }
+    }
+    
+    // Newsletter submission
+    document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = this.querySelector('.newsletter-input').value;
+      console.log(`Newsletter subscription for: ${email}`);
+      alert('Thank you for subscribing to our newsletter!');
+      this.reset();
+    });
+    
+    // Show page function
+    function showPage(pageNum) {
+      const visiblePosts = document.querySelectorAll('.blog-card[data-visible="true"], .blog-card:not([data-visible])');
+      const startIndex = (pageNum - 1) * BLOGS_PER_PAGE;
+      const endIndex = startIndex + BLOGS_PER_PAGE;
+      
+      document.querySelectorAll('.blog-card').forEach(post => {
+        post.style.display = 'none';
+      });
+      
+      Array.from(visiblePosts).forEach((post, index) => {
+        if (index >= startIndex && index < endIndex) {
+          post.style.display = 'block';
+        }
+      });
+    }
+    
+    // Render pagination function
+    function renderPagination() {
+      const paginationContainer = document.getElementById('pagination');
+      const currentTotalPages = window.totalPages || Math.ceil(document.querySelectorAll('.blog-card').length / BLOGS_PER_PAGE);
+      
+      paginationContainer.innerHTML = '';
+      
+      if (currentTotalPages <= 1) {
+        return;
+      }
+      
+      const prevButton = document.createElement('a');
+      prevButton.href = '#';
+      prevButton.className = 'page-link page-prev';
+      prevButton.innerHTML = '<i class="fas fa-chevron-left"></i>';
+      paginationContainer.appendChild(prevButton);
+      
+      const maxVisiblePages = 5;
+      
+      for (let i = 1; i <= currentTotalPages; i++) {
+        if (i === 1 || i === currentTotalPages || (i >= 1 && i <= maxVisiblePages)) {
+          const pageLink = document.createElement('a');
+          pageLink.href = '#';
+          pageLink.className = 'page-link' + (i === 1 ? ' active' : '');
+          pageLink.textContent = i;
+          
+          pageLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelectorAll('.pagination .page-link').forEach(link => {
+              link.classList.remove('active');
+            });
+            this.classList.add('active');
+            
+            const pageNum = parseInt(this.textContent);
+            showPage(pageNum);
+          });
+          
+          paginationContainer.appendChild(pageLink);
+        } else if (i === maxVisiblePages + 1 && currentTotalPages > maxVisiblePages + 1) {
+          const ellipsis = document.createElement('span');
+          ellipsis.className = 'page-link';
+          ellipsis.textContent = '...';
+          ellipsis.style.cursor = 'default';
+          paginationContainer.appendChild(ellipsis);
+        }
+      }
+      
+      const nextButton = document.createElement('a');
+      nextButton.href = '#';
+      nextButton.className = 'page-link page-next';
+      nextButton.innerHTML = '<i class="fas fa-chevron-right"></i>';
+      paginationContainer.appendChild(nextButton);
+      
+      prevButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        const activePage = document.querySelector('.pagination .page-link.active');
+        const currentPage = parseInt(activePage.textContent);
+        if (currentPage > 1) {
+          const prevPage = document.querySelector(`.pagination .page-link:not(.page-prev):not(.page-next):nth-child(${currentPage})`);
+          if (prevPage) prevPage.click();
+        }
+      });
+      
+      nextButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        const activePage = document.querySelector('.pagination .page-link.active');
+        const currentPage = parseInt(activePage.textContent);
+        if (currentPage < currentTotalPages) {
+          const nextPage = document.querySelector(`.pagination .page-link:not(.page-prev):not(.page-next):nth-child(${currentPage + 2})`);
+          if (nextPage) nextPage.click();
+        }
+      });
+    }
+    
+    // Sort blog posts by created date (newest first)
+    function sortBlogPosts() {
+      const blogContainer = document.getElementById('blog-container');
+      const blogPosts = Array.from(blogContainer.querySelectorAll('.blog-card'));
+      
+      blogPosts.sort((a, b) => {
+        const dateA = new Date(a.getAttribute('data-created-at'));
+        const dateB = new Date(b.getAttribute('data-created-at'));
+        return dateB - dateA; // Descending order (newest first)
+      });
+      
+      // Remove existing posts
+      blogPosts.forEach(post => blogContainer.removeChild(post));
+      
+      // Append sorted posts
+      blogPosts.forEach(post => blogContainer.appendChild(post));
+    }
+    
+    // Initialize code
+    document.querySelectorAll('.blog-card').forEach(post => {
+      post.dataset.visible = 'true';
+    });
+    
+    window.BLOGS_PER_PAGE = 9;
+    window.totalPages = Math.ceil(document.querySelectorAll('.blog-card').length / BLOGS_PER_PAGE);
+    window.filteredBlogCount = document.querySelectorAll('.blog-card').length;
+    
+    // Sort and initialize pagination
+    sortBlogPosts();
+    renderPagination();
+    showPage(1);
+  </script>
+</body>
+</html>

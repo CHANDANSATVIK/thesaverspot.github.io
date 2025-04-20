@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>SaverSpot - Best Deals & Discounts in India | Top Offers 2025</title>
+
+<!-- Essential Google SEO Meta Tags -->
+<meta name="description" content="Discover the best deals and discounts in India at SaverSpot. Find exclusive offers on electronics, fashion, home products, beauty, travel and more. Updated daily.">
+<meta name="keywords" content="deals, discounts, India, SaverSpot, coupons, offers, online shopping, best price, electronics, fashion, home">
+<meta name="author" content="SaverSpot">
+
+<!-- Canonical URL - essential for SEO -->
+<link rel="canonical" href="https://thesaverspot.in/">
+
+<!-- Robots directive -->
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<!-- Basic Open Graph for social sharing -->
+<meta property="og:title" content="SaverSpot - Best Deals & Discounts in India">
+<meta property="og:description" content="Discover exclusive offers and discounts across India's top brands. Daily updated deals on electronics, fashion, home and more.">
+<meta property="og:image" content="https://thesaverspot.in/images/saverspot_logo2.png">
+<meta property="og:url" content="https://thesaverspot.in/">
+<meta property="og:type" content="website">
+
+<!-- Basic Structured Data - just enough for Google to understand your site -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "SaverSpot",
+  "url": "https://thesaverspot.in/",
+  "description": "Best Deals & Discounts in India"
+}
+</script>
+<style>
+:root {
+  --primary: #00e5ff;
+  --secondary: #ffeb3b;
+  --dark: #333;
+  --light: #f9f9f9;
+  --accent: #ff4081;
+  
+  /* Adding complementary shades for gradients */
+  --primary-dark: #00b8d4;
+  --primary-light: #80f9ff;
+  --secondary-dark: #c8ba00;
+  --accent-dark: #c51162;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+header {
+  /* More subtle gradient */
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  padding: 0.5rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  width: 300px;
+  height: auto;
+  transition: all 0.3s ease;
+  margin-top: 10px; /* Add this line to create more space above the logo */
+}
+
+header.scrolled {
+  padding: 0.3rem 0;
+  height: 50px;
+  /* More transparent version of the same gradient */
+  background: linear-gradient(135deg, rgba(0, 229, 255, 0.95), rgba(0, 184, 212, 0.95));
+  backdrop-filter: blur(8px);
+}
+
+header.scrolled .logo {
+  width: 200px;
+  margin-bottom: 4px;
+}
+
+nav .category-button {
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+}
+
+.hero {
+  /* Same gradient as header for consistency */
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  padding: 3rem 0;
+  text-align: center;
+  color: var(--dark);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  /* Improved text contrast */
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.deals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.deal-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+.deal-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.deal-image {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.deal-content {
+  padding: 1.5rem;
+}
+
+.deal-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--dark);
+}
+
+.deal-price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.original-price {
+  font-size: 1rem;
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 0.8rem;
+}
+
+.current-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.discount-badge {
+  background-color: var(--secondary);
+  color: var(--dark);
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-left: 0.8rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.deal-description {
+  margin-bottom: 1.5rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.deal-button {
+  display: inline-block;
+  /* More sophisticated gradient with the same accent color */
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(255, 64, 129, 0.2);
+}
+
+.deal-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 64, 129, 0.4);
+}
+
+.expire-time {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.expire-time i {
+  margin-right: 0.3rem;
+  color: var(--accent);
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.category-button {
+  background-color: white;
+  color: var(--dark);
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  border: 2px solid var(--primary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.category-button.active, .category-button:hover {
+  background-color: var(--primary);
+  color: var(--dark);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+footer {
+  /* More sophisticated gradient */
+  background: linear-gradient(135deg, var(--primary-dark), #0091a8);
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  margin-top:0rem;
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.08);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-icon {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.social-icon:hover {
+  background-color: var(--secondary);
+  transform: translateY(-5px);
+  color: var(--dark);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.copyright {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.filters-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem auto 1rem;
+  padding: 1.2rem 2rem;
+  max-width: 900px;
+  /* More refined gradient with same colors */
+  background: linear-gradient(135deg, rgba(0, 229, 255, 0.08), rgba(0, 184, 212, 0.12));
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 184, 212, 0.08);
+  border: 1px solid rgba(0, 229, 255, 0.15);
+  position: relative;
+}
+
+.filters-container::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 6px;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  border-radius: 10px;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filter-group label {
+  font-weight: 600;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.filter-group select {
+  padding: 0.8rem 1.2rem;
+  border: 2px solid rgba(0, 229, 255, 0.3);
+  border-radius: 30px;
+  background: white;
+  font-size: 0.95rem;
+  color: var(--dark);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 180px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.filter-group select:hover, 
+.filter-group select:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 229, 255, 0.15);
+}
+
+.search-container {
+  display: flex;
+  max-width: 500px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+
+#search-input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 2px solid #ddd;
+  border-right: none;
+  border-radius: 30px 0 0 30px;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+#search-input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+#search-button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0 1.5rem;
+  border-radius: 0 30px 30px 0;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(255, 64, 129, 0.2);
+  transition: all 0.2s ease;
+}
+
+#search-button:hover {
+  background: var(--accent-dark);
+}
+
+/* Mobile menu button */
+.mobile-menu-button {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.mobile-menu-button span {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 3px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  .tagline {
+    font-size: 1rem;
+  }
+  
+  .deals-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem 0;
+  }
+  
+  .filters-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .filter-group {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .filter-group select {
+    width: 100%;
+    min-width: unset;
+  }
+  
+  .categories {
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+  
+  .category-button {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  
+  .header-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .search-container {
+    padding: 0 0.5rem;
+  }
+  
+  #search-input {
+    padding: 0.7rem;
+  }
+  
+  .deal-card {
+    max-width: 100%;
+  }
+  
+  .deal-image {
+    height: 180px;
+  }
+  
+  .deal-content {
+    padding: 1.2rem;
+  }
+  
+  .social-links {
+    gap: 1rem;
+  }
+  
+  .mobile-menu-button {
+    display: flex;
+  }
+  
+  /* Hide navigation by default on mobile */
+  nav {
+    display: none;
+  }
+  
+  /* When active class is added */
+  nav.active {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    padding: 1rem;
+    z-index: 100;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  .hero {
+    padding: 2rem 0;
+  }
+  
+  .deal-title {
+    font-size: 1.1rem;
+  }
+  
+  .current-price {
+    font-size: 1.3rem;
+  }
+  
+  .original-price {
+    font-size: 0.9rem;
+  }
+  
+  .logo {
+    width: 150px;
+  }
+  
+  .container {
+    width: 95%;
+  }
+  
+  .categories {
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 0.5rem;
+    margin: 1rem -0.5rem;
+    padding: 0 0.5rem 0.5rem;
+    width: 100%;
+  }
+  
+  .categories::-webkit-scrollbar {
+    height: 4px;
+  }
+  
+  .categories::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 184, 212, 0.3);
+    border-radius: 4px;
+  }
+  
+  .category-button {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+}
+</style>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header id="site-header">
+  <div class="container header-content">
+    <img src="saverspot_logo1.png" alt="SaverSpot Logo" class="logo" id="logo">
+  </div>
+</header>
+<section class="hero">
+<div class="container">
+<h1>Best Deals & Discounts in India</h1>
+<p class="tagline">Exclusive offers curated just for you!</p>
+<div class="search-container">
+<input type="text" id="search-input" placeholder="Search for deals...">
+<button id="search-button"><i class="fas fa-search"></i></button>
+</div>
+<div class="categories">
+<button class="category-button active">All</button>
+<button class="category-button">Tech</button>
+<button class="category-button">Fashion</button>
+<button class="category-button">Home</button>
+<button class="category-button">Beauty</button>
+<button class="category-button">Travel</button>
+<button class="category-button">Health & Nutrition</button>
+</div>
+</div>
+</section>
+<div class="filters-container">
+<div class="filter-group">
+<label>Price Range:</label>
+<select id="price-filter">
+<option value="all">All Prices</option>
+<option value="under1000">Under ₹1,000</option>
+<option value="1000-5000">₹1,000 - ₹5,000</option>
+<option value="5000-10000">₹5,000 - ₹10,000</option>
+<option value="above10000">Above ₹10,000</option>
+</select>
+</div>
+<div class="filter-group">
+<label>Sort By:</label>
+<select id="sort-filter">
+<option value="newest">Newest First</option>
+<option value="priceAsc">Price: Low to High</option>
+<option value="priceDesc">Price: High to Low</option>
+<option value="discountDesc">Biggest Discount</option>
+</select>
+</div>
+</div>
+<section class="container">
+  <div class="deals-grid" id="deals-container">
+    <!-- Sample deal cards will be generated dynamically -->
+  </div>
+  <div class="pagination" id="deals-pagination">
+    <!-- Will be populated by JavaScript -->
+  </div>
+</section>
+<!-- Add this right before the footer tag -->
+<section class="blog-section">
+    <div class="container">
+      <h2 class="section-title">SaverSpot Blogs</h2>
+      <p class="section-description">Get the latest savings tips, product reviews, and shopping guides</p>
+      
+      <div class="blog-cards">
+        <div class="blog-card">
+          <img src="/api/placeholder/400/250" alt="Shopping Tips" class="blog-image">
+          <div class="blog-content">
+            <span class="blog-category">Shopping Tips</span>
+            <h3 class="blog-title">10 Ways to Save Money on Electronics</h3>
+            <p class="blog-excerpt">Learn the insider secrets to getting the best deals on smartphones, laptops, and other gadgets in 2025.</p>
+            <a href="save-money-electronics.html" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <div class="blog-card">
+          <img src="/api/placeholder/400/250" alt="Deal Alert" class="blog-image">
+          <div class="blog-content">
+            <span class="blog-category">Deal Alert</span>
+            <h3 class="blog-title">Best Summer Sale Discounts in 2025</h3>
+            <p class="blog-excerpt">We've rounded up the hottest summer discounts from your favorite brands that you shouldn't miss.</p>
+            <a href="blogs/summer-sales-2025.html" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <div class="blog-card">
+          <img src="/api/placeholder/400/250" alt="Product Review" class="blog-image">
+          <div class="blog-content">
+            <span class="blog-category">Product Review</span>
+            <h3 class="blog-title">Are Premium Headphones Worth It?</h3>
+            <p class="blog-excerpt">We compare budget-friendly options with high-end models to help you decide where to spend your money.</p>
+            <a href="blogs/premium-headphones-review.html" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="view-all-container">
+        <a href="blogs.html" class="view-all-button">View All Articles</a>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+  /* Blog Section Styles */
+  .blog-section {
+    padding: 2rem 0;
+    background-color: #f5fcff;
+    /* Subtle gradient background */
+    background-image: linear-gradient(to bottom, rgba(0, 229, 255, 0.05), rgba(0, 184, 212, 0.1));
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 0.8rem;
+    color: var(--dark);
+  }
+  
+  .section-description {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 3rem;
+  }
+  
+  .blog-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .blog-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.04);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+  }
+  
+  .blog-image {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+  .blog-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .blog-category {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: var(--dark);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    align-self: flex-start;
+  }
+  
+  .blog-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    color: var(--dark);
+    line-height: 1.4;
+  }
+  
+  .blog-excerpt {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    flex-grow: 1;
+  }
+  
+  .blog-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.2s ease;
+    margin-top: auto;
+  }
+  
+  .blog-link i {
+    margin-left: 0.5rem;
+    transition: transform 0.2s ease;
+  }
+  
+  .blog-link:hover {
+    color: var(--accent-dark);
+  }
+  
+  .blog-link:hover i {
+    transform: translateX(4px);
+  }
+  
+  .view-all-container {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .view-all-button {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(255, 64, 129, 0.2);
+  }
+  
+  .view-all-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(255, 64, 129, 0.3);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .blog-cards {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    .section-title {
+      font-size: 1.8rem;
+    }
+    
+    .section-description {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+  }
+  </style>
+<footer>
+<div class="container">
+<div class="social-links">
+<a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+<a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+<a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+<a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+</div>
+<p class="copyright">© 2025 SaverSpot. All deals curated with ❤️ for Indian shoppers.</p>
+</div>
+</footer>
+<script>
+  // Sample data - in a real GitHub Pages implementation, you would store these in localStorage or a JSON file
+  const sampleDeals = [
+    {
+      id: 1,
+      title: "OnePlus Buds Pro 2",
+      description: "Experience premium sound quality with active noise cancellation and up to 40 hours of battery life.",
+      originalPrice: 11999,
+      currentPrice: 7999,
+      discount: "33%",
+      image: "/api/placeholder/400/250",
+      category: "Tech",
+      link: "#",
+      expiry: "2025-05-15",
+      createdAt: "2025-04-14"
+    },
+    {
+      id: 2,
+      title: "PUMA Running Shoes",
+      description: "Lightweight, comfortable running shoes perfect for your daily workout or casual wear.",
+      originalPrice: 5999,
+      currentPrice: 2999,
+      discount: "50%",
+      image: "/api/placeholder/400/250",
+      category: "Fashion",
+      link: "#",
+      expiry: "2025-04-30",
+      createdAt: "2025-04-15"
+    },
+    {
+      id: 3,
+      title: "Philips Air Purifier",
+      description: "Remove 99.97% of allergens with 3-layer filtration system. Perfect for bedrooms and living areas.",
+      originalPrice: 15999,
+      currentPrice: 9999,
+      discount: "38%",
+      image: "/api/placeholder/400/320",
+      category: "Home",
+      link: "#",
+      expiry: "2025-05-20",
+      createdAt: "2025-04-16"
+    },
+    {
+  id: 4,
+  title: "Samsung Galaxy Watch",
+  description: "Track your fitness with this sleek smartwatch featuring AMOLED display.",
+  originalPrice: 24999,
+  currentPrice: 17999,
+  discount: "28%",
+  image: "/api/placeholder/400/320",
+  category: "Tech",
+  link: "#",
+  expiry: "2025-05-10",
+  createdAt: "2025-04-17" // Newest deal
+}
+    // Add more deals with createdAt dates as needed
+  ];
+  
+  // DOM elements
+  const dealsContainer = document.getElementById('deals-container');
+  const categoryButtons = document.querySelectorAll('.category-button');
+  const logoElement = document.getElementById('logo');
+  
+  // Define global variables for pagination
+  window.DEALS_PER_PAGE = 16; // Set number of deals to display per page
+  window.filteredDealsCount = sampleDeals.length;
+  window.totalDealPages = Math.ceil(sampleDeals.length / DEALS_PER_PAGE);
+  
+  // Display deals for a specific page
+  function showDealPage(pageNum) {
+    const startIndex = (pageNum - 1) * DEALS_PER_PAGE;
+    const endIndex = startIndex + DEALS_PER_PAGE;
+    const dealsToShow = window.filteredDeals.slice(startIndex, endIndex);
+  
+    dealsContainer.innerHTML = '';
+    if (dealsToShow.length === 0) {
+      dealsContainer.innerHTML = `
+        <div style="grid-column: 1 / -1; text-align: center; padding: 3rem 0;">
+          <h3>No deals found in this category</h3>
+          <p>Check back soon or try another category!</p>
+        </div>
+      `;
+      return;
+    }
+  
+    dealsToShow.forEach(deal => {
+      const dealCard = document.createElement('div');
+      dealCard.className = 'deal-card';
+      const expiryDate = deal.expiry ? new Date(deal.expiry) : null;
+      const today = new Date();
+      const daysLeft = expiryDate ? Math.ceil((expiryDate - today) / (1000 * 60 * 60 * 24)) : null;
+      dealCard.innerHTML = `
+        <img src="${deal.image}" alt="${deal.title}" class="deal-image">
+        <div class="deal-content">
+          <h3 class="deal-title">${deal.title}</h3>
+          <div class="deal-price">
+            <span class="original-price">₹${deal.originalPrice.toLocaleString()}</span>
+            <span class="current-price">₹${deal.currentPrice.toLocaleString()}</span>
+            <span class="discount-badge">${deal.discount} OFF</span>
+          </div>
+          <p class="deal-description">${deal.description}</p>
+          <a href="${deal.link}" class="deal-button" target="_blank">GRAB DEAL</a>
+          ${daysLeft ? `
+            <div class="expire-time">
+              <i class="far fa-clock"></i>
+              Expires in ${daysLeft} days
+            </div>
+          ` : ''}
+        </div>
+      `;
+      dealsContainer.appendChild(dealCard);
+    });
+  }
+  
+  // Render pagination for deals
+  function renderDealPagination() {
+    const paginationContainer = document.getElementById('deals-pagination');
+    const currentTotalPages = window.totalDealPages || Math.ceil(window.filteredDealsCount / DEALS_PER_PAGE);
+  
+    paginationContainer.innerHTML = ''; // Clear existing pagination
+  
+    // Only show pagination if there's more than one page
+    if (currentTotalPages <= 1) {
+      return;
+    }
+  
+    // Add previous button
+    const prevButton = document.createElement('a');
+    prevButton.href = '#';
+    prevButton.className = 'page-link page-prev';
+    prevButton.innerHTML = '<i class="fas fa-chevron-left"></i>';
+    paginationContainer.appendChild(prevButton);
+  
+    // Add page numbers (limit to 5 pages + ellipsis if needed)
+    const maxVisiblePages = 5;
+  
+    for (let i = 1; i <= currentTotalPages; i++) {
+      if (i === 1 || i === currentTotalPages || (i >= 1 && i <= maxVisiblePages)) {
+        const pageLink = document.createElement('a');
+        pageLink.href = '#';
+        pageLink.className = 'page-link' + (i === 1 ? ' active' : '');
+        pageLink.textContent = i;
+  
+        pageLink.addEventListener('click', function(e) {
+          e.preventDefault();
+          document.querySelectorAll('#deals-pagination .page-link').forEach(link => {
+            link.classList.remove('active');
+          });
+          this.classList.add('active');
+  
+          const pageNum = parseInt(this.textContent);
+          showDealPage(pageNum);
+        });
+  
+        paginationContainer.appendChild(pageLink);
+      } else if (i === maxVisiblePages + 1 && currentTotalPages > maxVisiblePages + 1) {
+        const ellipsis = document.createElement('span');
+        ellipsis.className = 'page-link';
+        ellipsis.textContent = '...';
+        ellipsis.style.cursor = 'default';
+        paginationContainer.appendChild(ellipsis);
+      }
+    }
+  
+    // Add next button
+    const nextButton = document.createElement('a');
+    nextButton.href = '#';
+    nextButton.className = 'page-link page-next';
+    nextButton.innerHTML = '<i class="fas fa-chevron-right"></i>';
+    paginationContainer.appendChild(nextButton);
+  
+    // Add functionality to prev/next buttons
+    prevButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      const activePage = document.querySelector('#deals-pagination .page-link.active');
+      const currentPage = parseInt(activePage.textContent);
+      if (currentPage > 1) {
+        const prevPage = document.querySelector(`#deals-pagination .page-link:not(.page-prev):not(.page-next):nth-child(${currentPage})`);
+        if (prevPage) prevPage.click();
+      }
+    });
+  
+    nextButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      const activePage = document.querySelector('#deals-pagination .page-link.active');
+      const currentPage = parseInt(activePage.textContent);
+      if (currentPage < currentTotalPages) {
+        const nextPage = document.querySelector(`#deals-pagination .page-link:not(.page-prev):not(.page-next):nth-child(${currentPage + 2})`);
+        if (nextPage) nextPage.click();
+      }
+    });
+  }
+  
+  // Updated displayDeals function to sort by createdAt by default
+  function displayDeals(deals) {
+    // Create a copy of deals to avoid modifying the original array
+    window.filteredDeals = [...deals].sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+    window.filteredDealsCount = window.filteredDeals.length;
+    window.totalDealPages = Math.ceil(window.filteredDeals.length / DEALS_PER_PAGE);
+  
+    // Show first page of deals
+    showDealPage(1);
+    // Render pagination
+    renderDealPagination();
+  }
+  
+  // Filter deals by category
+  function filterDeals(category) {
+    if (category === 'All') {
+      displayDeals(sampleDeals);
+    } else {
+      const filteredDeals = sampleDeals.filter(deal => deal.category === category);
+      displayDeals(filteredDeals);
+    }
+  }
+  
+  // Category buttons click event
+  categoryButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      categoryButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+      applyFilters();
+    });
+  });
+  
+  // Custom logo handling
+  logoElement.addEventListener('error', () => {
+    logoElement.style.background = "#ffeb3b";
+    logoElement.style.display = "flex";
+    logoElement.style.alignItems = "center";
+    logoElement.style.justifyContent = "center";
+    logoElement.style.fontWeight = "bold";
+    logoElement.style.fontSize = "24px";
+    logoElement.style.borderRadius = "8px";
+    logoElement.style.color = "#333";
+    logoElement.style.fontFamily = "'Poppins', sans-serif";
+    logoElement.textContent = "SAVER SPOT";
+  });
+  
+  // Search functionality
+  function searchDeals() {
+    const searchTerm = document.getElementById('search-input').value.toLowerCase();
+    const activeCategory = document.querySelector('.category-button.active').textContent;
+    let dealsToFilter = sampleDeals;
+    if (activeCategory !== 'All') {
+      dealsToFilter = sampleDeals.filter(deal => deal.category === activeCategory);
+    }
+    const searchResults = dealsToFilter.filter(deal =>
+      deal.title.toLowerCase().includes(searchTerm) ||
+      deal.description.toLowerCase().includes(searchTerm) ||
+      deal.category.toLowerCase().includes(searchTerm)
+    );
+    displayDeals(searchResults);
+  }
+  
+  // Add event listeners for search
+  document.getElementById('search-button').addEventListener('click', searchDeals);
+  document.getElementById('search-input').addEventListener('keyup', function(event) {
+    if (event.key === 'Enter') {
+      searchDeals();
+    }
+  });
+  
+  // Price filtering
+  document.getElementById('price-filter').addEventListener('change', applyFilters);
+  document.getElementById('sort-filter').addEventListener('change', applyFilters);
+  
+  function applyFilters() {
+    const activeCategory = document.querySelector('.category-button.active').textContent;
+    const priceFilter = document.getElementById('price-filter').value;
+    const sortFilter = document.getElementById('sort-filter').value;
+    const searchTerm = document.getElementById('search-input').value.toLowerCase();
+  
+    // Filter by category
+    let filteredDeals = sampleDeals;
+    if (activeCategory !== 'All') {
+      filteredDeals = filteredDeals.filter(deal => deal.category === activeCategory);
+    }
+  
+    // Filter by search term
+    if (searchTerm) {
+      filteredDeals = filteredDeals.filter(deal =>
+        deal.title.toLowerCase().includes(searchTerm) ||
+        deal.description.toLowerCase().includes(searchTerm) ||
+        deal.category.toLowerCase().includes(searchTerm)
+      );
+    }
+  
+    // Filter by price
+    if (priceFilter !== 'all') {
+      switch(priceFilter) {
+        case 'under1000':
+          filteredDeals = filteredDeals.filter(deal => deal.currentPrice < 1000);
+          break;
+        case '1000-5000':
+          filteredDeals = filteredDeals.filter(deal => deal.currentPrice >= 1000 && deal.currentPrice <= 5000);
+          break;
+        case '5000-10000':
+          filteredDeals = filteredDeals.filter(deal => deal.currentPrice > 5000 && deal.currentPrice <= 10000);
+          break;
+        case 'above10000':
+          filteredDeals = filteredDeals.filter(deal => deal.currentPrice > 10000);
+          break;
+      }
+    }
+  
+    // Sort deals
+    switch(sortFilter) {
+      case 'priceAsc':
+        filteredDeals.sort((a, b) => a.currentPrice - b.currentPrice);
+        break;
+      case 'priceDesc':
+        filteredDeals.sort((a, b) => b.currentPrice - a.currentPrice);
+        break;
+      case 'discountDesc':
+        filteredDeals.sort((a, b) => {
+          const discountA = ((a.originalPrice - a.currentPrice) / a.originalPrice) * 100;
+          const discountB = ((b.originalPrice - b.currentPrice) / b.originalPrice) * 100;
+          return discountB - discountA;
+        });
+        break;
+      case 'newest':
+        filteredDeals.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+        break;
+    }
+  
+    displayDeals(filteredDeals);
+  }
+  
+  // Shrink header on scroll
+  window.addEventListener('scroll', function() {
+    const header = document.getElementById('site-header');
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+  
+  // Initialize
+  window.filteredDeals = sampleDeals;
+  displayDeals(sampleDeals);
+  
+  // Set "Newest First" as default sort option
+  document.getElementById('sort-filter').value = 'newest';
+  </script>
+</body>
+</html>
