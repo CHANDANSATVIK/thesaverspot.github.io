@@ -54,7 +54,6 @@ body {
 }
 
 header {
-  /* More subtle gradient */
   background: linear-gradient(135deg, var(--primary), var(--primary-dark));
   padding: 0.5rem 0;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
@@ -75,7 +74,7 @@ header {
 
 .header-content {
   display: flex;
-  justify-content: center; /* Change from space-between to center */
+  justify-content: center;
   align-items: center;
   height: 100%;
 }
@@ -95,7 +94,6 @@ header {
 header.scrolled {
   padding: 0.3rem 0;
   height: 50px;
-  /* More transparent version of the same gradient */
   background: linear-gradient(135deg, rgba(0, 229, 255, 0.95), rgba(0, 184, 212, 0.95));
   backdrop-filter: blur(8px);
 }
@@ -106,7 +104,6 @@ header.scrolled .logo {
 }
 
 .blog-hero {
-  /* Same gradient as header for consistency */
   background: linear-gradient(135deg, var(--primary), var(--primary-dark));
   padding: 3rem 0;
   text-align: center;
@@ -117,7 +114,6 @@ h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   font-weight: 700;
-  /* Improved text contrast */
   text-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
@@ -190,7 +186,6 @@ h1 {
 }
 
 footer {
-  /* More sophisticated gradient */
   background: linear-gradient(135deg, var(--primary-dark), #0091a8);
   color: white;
   padding: 2rem 0;
@@ -253,7 +248,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 2.5rem;
-  margin-bottom: 1.5rem; /* Change from 3rem to 1.5rem */
+  margin-bottom: 1.5rem;
 }
 
 .blog-card {
@@ -472,7 +467,7 @@ footer {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
-  margin: 1rem 0 1rem; /* Change from 3rem to 1rem */
+  margin: 1rem 0 1rem;
 }
 
 .page-link {
@@ -506,41 +501,49 @@ footer {
 
 /* Newsletter Section */
 .newsletter {
-  background: linear-gradient(135deg, var(--secondary), var(--secondary-dark));
-  padding: 3rem 0;
+  background: linear-gradient(135deg, #ffeb3b, #c8ba00);
+  padding: 2rem 0;
   margin: 4rem 0;
   text-align: center;
-  border-radius: 12px;
+  border-radius: 100px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .newsletter-title {
-  color: var(--dark);
+  color: #333;
   font-size: 1.8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 
 .newsletter-description {
-  color: var(--dark);
-  opacity: 0.9;
+  color: #555;
   max-width: 600px;
-  margin: 0 auto 2rem;
-  font-size: 1.1rem;
+  margin: 0 auto 1.5rem;
+  font-size: 1rem;
 }
 
 .newsletter-form {
   display: flex;
   max-width: 500px;
   margin: 0 auto;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-  border-radius: 40px;
+  background: #fff;
+  border-radius: 30px;
   overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 .newsletter-input {
   flex: 1;
-  padding: 1rem 1.5rem;
+  padding: 0.9rem 1.5rem;
   border: none;
   font-size: 1rem;
+  color: #333;
+  background: transparent;
+}
+
+.newsletter-input::placeholder {
+  color: #888;
 }
 
 .newsletter-input:focus {
@@ -548,17 +551,18 @@ footer {
 }
 
 .newsletter-button {
-  background: var(--accent);
+  background: #ff4081;
   color: white;
   border: none;
-  padding: 1rem 2rem;
+  padding: 0.9rem 1.8rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: background 0.2s ease;
+  border-radius: 0 30px 30px 0;
 }
 
 .newsletter-button:hover {
-  background: var(--accent-dark);
+  background: #c51162;
 }
 
 /* Responsive styles */
@@ -603,21 +607,6 @@ footer {
   .newsletter-title {
     font-size: 1.5rem;
   }
-  
-  .newsletter-form {
-    flex-direction: column;
-    border-radius: 12px;
-  }
-  
-  .newsletter-input {
-    width: 100%;
-    border-radius: 12px 12px 0 0;
-  }
-  
-  .newsletter-button {
-    width: 100%;
-    border-radius: 0 0 12px 12px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -649,16 +638,173 @@ footer {
     gap: 0.5rem;
   }
 }
+
+/* New responsive styles for smaller screens */
+@media (max-width: 540px) {
+  .logo {
+    width: 180px;
+    margin-top: 10px;
+  }
+
+  header.scrolled .logo {
+    width: 150px;
+    margin-top: 8px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .tagline {
+    font-size: 0.9rem;
+  }
+
+  .search-container {
+    max-width: 90%;
+    padding: 0;
+  }
+
+  #search-input {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  #search-button {
+    padding: 0 1rem;
+  }
+
+  .featured-title {
+    font-size: 1.3rem;
+  }
+
+  .featured-excerpt {
+    font-size: 0.9rem;
+  }
+
+  .featured-meta {
+    font-size: 0.8rem;
+  }
+
+  .featured-link {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .blog-title {
+    font-size: 1.1rem;
+  }
+
+  .blog-excerpt {
+    font-size: 0.9rem;
+  }
+
+  .blog-meta {
+    font-size: 0.75rem;
+  }
+
+  .blog-link {
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+
+  .newsletter-title {
+    font-size: 1.3rem;
+  }
+
+  .newsletter-description {
+    font-size: 0.9rem;
+  }
+
+  .newsletter-input {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .newsletter-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .logo {
+    width: 160px;
+    margin-top: 8px;
+  }
+
+  header.scrolled .logo {
+    width: 130px;
+    margin-top: 6px;
+  }
+
+  .featured-image {
+    height: 200px;
+  }
+
+  .blog-image {
+    max-height: 180px;
+  }
+
+  .category-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .pagination {
+    gap: 0.3rem;
+  }
+
+  .page-link {
+    width: 35px;
+    height: 35px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .logo {
+    width: 140px;
+    margin-top: 6px;
+  }
+
+  header.scrolled .logo {
+    width: 120px;
+    margin-top: 5px;
+  }
+
+  .search-container {
+    max-width: 85%;
+  }
+
+  .featured-content {
+    padding: 1rem;
+  }
+
+  .blog-content {
+    padding: 1rem;
+  }
+
+  .blog-grid {
+    gap: 1.5rem;
+  }
+}
 </style>
 </head>
 <body>
 <header id="site-header">
   <div class="container header-content">
-    <div></div> <!-- Empty div for spacing -->
+    <div></div>
     <a href="index.html" class="logo-link">
       <img src="saverspot_logo1.png" alt="SaverSpot Logo" class="logo" id="logo">
     </a>
-    <div></div> <!-- Empty div for spacing -->
+    <div></div>
   </div>
 </header>
 
@@ -841,11 +987,10 @@ footer {
   </section>
   
   <!-- Pagination -->
-  <!-- Replace your current pagination div with this -->
-<div class="pagination" id="pagination">
+  <div class="pagination" id="pagination">
     <!-- Will be populated by JavaScript -->
   </div>
-</section>
+</div>
 
 <!-- Newsletter Section -->
 <section class="newsletter">
@@ -858,18 +1003,17 @@ footer {
     </form>
   </div>
 </section>
-</div>
 
 <footer>
-<div class="container">
-  <div class="social-links">
-    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-    <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
-    <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+  <div class="container">
+    <div class="social-links">
+      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p class="copyright">© 2025 SaverSpot. All rights reserved.</p>
   </div>
-  <p class="copyright">© 2025 SaverSpot. All rights reserved.</p>
-</div>
 </footer>
 
 <script>
@@ -929,7 +1073,7 @@ footer {
       
       window.filteredBlogCount = visibleCount;
       window.totalPages = Math.ceil(visibleCount / BLOGS_PER_PAGE);
-      sortBlogPosts(); // Sort after filtering
+      sortBlogPosts();
     }
     
     // Search functionality
@@ -979,7 +1123,7 @@ footer {
         
         renderPagination();
         showPage(1);
-        sortBlogPosts(); // Sort after searching
+        sortBlogPosts();
       }
     }
     
@@ -1091,13 +1235,10 @@ footer {
       blogPosts.sort((a, b) => {
         const dateA = new Date(a.getAttribute('data-created-at'));
         const dateB = new Date(b.getAttribute('data-created-at'));
-        return dateB - dateA; // Descending order (newest first)
+        return dateB - dateA;
       });
       
-      // Remove existing posts
       blogPosts.forEach(post => blogContainer.removeChild(post));
-      
-      // Append sorted posts
       blogPosts.forEach(post => blogContainer.appendChild(post));
     }
     
@@ -1110,7 +1251,6 @@ footer {
     window.totalPages = Math.ceil(document.querySelectorAll('.blog-card').length / BLOGS_PER_PAGE);
     window.filteredBlogCount = document.querySelectorAll('.blog-card').length;
     
-    // Sort and initialize pagination
     sortBlogPosts();
     renderPagination();
     showPage(1);
