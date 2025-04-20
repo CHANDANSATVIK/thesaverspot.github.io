@@ -553,26 +553,99 @@ footer {
   }
   
   .categories {
-    overflow-x: auto;
-    justify-content: flex-start;
-    padding-bottom: 0.5rem;
-    margin: 1rem -0.5rem;
-    padding: 0 0.5rem 0.5rem;
-    width: 100%;
-  }
-  
-  .categories::-webkit-scrollbar {
-    height: 4px;
-  }
-  
-  .categories::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 184, 212, 0.3);
-    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    padding: 0;
   }
   
   .category-button {
-    flex: 0 0 auto;
-    white-space: nowrap;
+    padding: 0.4rem 0.7rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+  
+  .tagline {
+    font-size: 0.9rem;
+  }
+  
+  .deal-title {
+    font-size: 1rem;
+  }
+  
+  .current-price {
+    font-size: 1.2rem;
+  }
+  
+  .original-price {
+    font-size: 0.8rem;
+  }
+  
+  .logo {
+    width: 130px;
+  }
+  
+  .categories {
+    gap: 0.3rem;
+  }
+  
+  .category-button {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+  }
+  
+  .deal-image {
+    height: 160px;
+  }
+  
+  .deal-content {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+  
+  .tagline {
+    font-size: 0.85rem;
+  }
+  
+  .logo {
+    width: 120px;
+  }
+  
+  .deal-title {
+    font-size: 0.95rem;
+  }
+  
+  .current-price {
+    font-size: 1.1rem;
+  }
+  
+  .original-price {
+    font-size: 0.75rem;
+  }
+  
+  .deal-image {
+    height: 140px;
+  }
+  
+  .deal-content {
+    padding: 0.8rem;
+  }
+  
+  .category-button {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.75rem;
   }
 }
 </style>
