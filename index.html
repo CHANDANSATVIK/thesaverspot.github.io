@@ -61,7 +61,6 @@ body {
 }
 
 header {
-  /* More subtle gradient */
   background: linear-gradient(135deg, var(--primary), var(--primary-dark));
   padding: 0.5rem 0;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
@@ -91,13 +90,12 @@ header {
   width: 300px;
   height: auto;
   transition: all 0.3s ease;
-  margin-top: 10px; /* Add this line to create more space above the logo */
+  margin-top: 10px;
 }
 
 header.scrolled {
   padding: 0.3rem 0;
   height: 50px;
-  /* More transparent version of the same gradient */
   background: linear-gradient(135deg, rgba(0, 229, 255, 0.95), rgba(0, 184, 212, 0.95));
   backdrop-filter: blur(8px);
 }
@@ -113,7 +111,6 @@ nav .category-button {
 }
 
 .hero {
-  /* Same gradient as header for consistency */
   background: linear-gradient(135deg, var(--primary), var(--primary-dark));
   padding: 3rem 0;
   text-align: center;
@@ -124,7 +121,6 @@ h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   font-weight: 700;
-  /* Improved text contrast */
   text-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
@@ -214,7 +210,6 @@ h1 {
 
 .deal-button {
   display: inline-block;
-  /* More sophisticated gradient with the same accent color */
   background: linear-gradient(135deg, var(--accent), var(--accent-dark));
   color: white;
   padding: 0.8rem 1.5rem;
@@ -274,7 +269,6 @@ h1 {
 }
 
 footer {
-  /* More sophisticated gradient */
   background: linear-gradient(135deg, var(--primary-dark), #0091a8);
   color: white;
   padding: 2rem 0;
@@ -322,7 +316,6 @@ footer {
   margin: 2rem auto 1rem;
   padding: 1.2rem 2rem;
   max-width: 900px;
-  /* More refined gradient with same colors */
   background: linear-gradient(135deg, rgba(0, 229, 255, 0.08), rgba(0, 184, 212, 0.12));
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 184, 212, 0.08);
@@ -505,12 +498,10 @@ footer {
     display: flex;
   }
   
-  /* Hide navigation by default on mobile */
   nav {
     display: none;
   }
   
-  /* When active class is added */
   nav.active {
     display: block;
     position: absolute;
@@ -648,6 +639,158 @@ footer {
     font-size: 0.75rem;
   }
 }
+
+/* Blog Section Styles */
+.blog-section {
+  padding: 2rem 0;
+  background-color: #f5fcff;
+  background-image: linear-gradient(to bottom, rgba(0, 229, 255, 0.05), rgba(0, 184, 212, 0.1));
+}
+
+.section-title {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 0.8rem;
+  color: var(--dark);
+}
+
+.section-description {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.blog-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.blog-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.04);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.blog-image {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.blog-category {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: var(--dark);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  align-self: flex-start;
+}
+
+.blog-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+  color: var(--dark);
+  line-height: 1.4;
+}
+
+.blog-excerpt {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.blog-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.2s ease;
+  margin-top: auto;
+}
+
+.blog-link i {
+  margin-left: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.blog-link:hover {
+  color: var(--accent-dark);
+}
+
+.blog-link:hover i {
+  transform: translateX(4px);
+}
+
+.view-all-container {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.view-all-button {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(255, 64, 129, 0.2);
+}
+
+.view-all-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(255, 64, 129, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .blog-cards {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .section-description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+}
 </style>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -706,204 +849,49 @@ footer {
     <!-- Will be populated by JavaScript -->
   </div>
 </section>
-<!-- Add this right before the footer tag -->
+<!-- Blog Section -->
 <section class="blog-section">
-    <div class="container">
-      <h2 class="section-title">SaverSpot Blogs</h2>
-      <p class="section-description">Get the latest savings tips, product reviews, and shopping guides</p>
-      
-      <div class="blog-cards">
-        <div class="blog-card">
-          <img src="budget-wireless-earbuds-og.png" alt="Best Budget Wireless Earbuds" class="blog-image">
-          <div class="blog-content">
-            <span class="blog-category">Buying Guides</span>
-            <h3 class="blog-title">5 Best Budget Wireless Earbuds Under ₹2,000 in 2025</h3>
-            <p class="blog-excerpt">Looking for the best wireless earbuds under ₹2,000 in 2025? We’ve tested all the top brands so you don’t have to. From the unbeatable Realme Buds T310 to the surprisingly premium CMF by Nothing Buds, this is your no-fluff guide to audio that sounds expensive but isn’t. Plus, see which budget models from OnePlus, Mi, and Motorola secretly outperform pricier rivals in ANC, sound, and battery. Don’t get fooled by the hype—get the earbuds that actually deliver.</p>
-            <a href="https://thesaverspot.in/best-budget-wireless-earbuds-2025.html" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-        
-        <div class="blog-card">
-          <img src="/api/placeholder/400/250" alt="Deal Alert" class="blog-image">
-          <div class="blog-content">
-            <span class="blog-category">Deal Alert</span>
-            <h3 class="blog-title">Best Summer Sale Discounts in 2025</h3>
-            <p class="blog-excerpt">We've rounded up the hottest summer discounts from your favorite brands that you shouldn't miss.</p>
-            <a href="blogs/summer-sales-2025.html" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-        
-        <div class="blog-card">
-          <img src="/api/placeholder/400/250" alt="Product Review" class="blog-image">
-          <div class="blog-content">
-            <span class="blog-category">Product Review</span>
-            <h3 class="blog-title">Are Premium Headphones Worth It?</h3>
-            <p class="blog-excerpt">We compare budget-friendly options with high-end models to help you decide where to spend your money.</p>
-            <a href="blogs/premium-headphones-review.html" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
-          </div>
+  <div class="container">
+    <h2 class="section-title">SaverSpot Blogs</h2>
+    <p class="section-description">Get the latest savings tips, product reviews, and shopping guides</p>
+    
+    <div class="blog-cards">
+      <div class="blog-card">
+        <img src="budget-smartphones-og.png" alt="Best Budget Smartphones" class="blog-image">
+        <div class="blog-content">
+          <span class="blog-category">Buying Guides</span>
+          <h3 class="blog-title">5 Best Budget Smartphones Under ₹15,000 with Flipkart Deals in 2025</h3>
+          <p class="blog-excerpt">Discover the top 5 budget smartphones under ₹15,000 on Flipkart in 2025. From the Vivo T4x 5G’s stellar performance to the Samsung Galaxy M35 5G’s vibrant AMOLED display, we’ve tested them all. Find out which phones offer the best value, camera, and battery life for your money, with exclusive Flipkart deals to seal the bargain.</p>
+          <a href="https://thesaverspot.in/best-budget-smartphones-15000-2025.html" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
       
-      <div class="view-all-container">
-        <a href="blogs.html" class="view-all-button">View All Articles</a>
+      <div class="blog-card">
+        <img src="budget-wireless-earbuds-og.png" alt="Best Budget Wireless Earbuds" class="blog-image">
+        <div class="blog-content">
+          <span class="blog-category">Buying Guides</span>
+          <h3 class="blog-title">5 Best Budget Wireless Earbuds Under ₹2,000 in 2025</h3>
+          <p class="blog-excerpt">Looking for the best wireless earbuds under ₹2,000 in 2025? We’ve tested all the top brands so you don’t have to. From the unbeatable Realme Buds T310 to the surprisingly premium CMF by Nothing Buds, this is your no-fluff guide to audio that sounds expensive but isn’t. Plus, see which budget models from OnePlus, Mi, and Motorola secretly outperform pricier rivals in ANC, sound, and battery. Don’t get fooled by the hype—get the earbuds that actually deliver.</p>
+          <a href="https://thesaverspot.in/best-budget-wireless-earbuds-2025.html" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      
+      <div class="blog-card">
+        <img src="/api/placeholder/400/250" alt="Summer Sales" class="blog-image">
+        <div class="blog-content">
+          <span class="blog-category">Deal Alert</span>
+          <h3 class="blog-title">Best Summer Sale Discounts in 2025</h3>
+          <p class="blog-excerpt">We've rounded up the hottest summer discounts from your favorite brands that you shouldn't miss.</p>
+          <a href="blogs/summer-sales-2025.html" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
+        </div>
       </div>
     </div>
-  </section>
-  
-  <style>
-  /* Blog Section Styles */
-  .blog-section {
-    padding: 2rem 0;
-    background-color: #f5fcff;
-    /* Subtle gradient background */
-    background-image: linear-gradient(to bottom, rgba(0, 229, 255, 0.05), rgba(0, 184, 212, 0.1));
-  }
-  
-  .section-title {
-    font-size: 2.2rem;
-    text-align: center;
-    margin-bottom: 0.8rem;
-    color: var(--dark);
-  }
-  
-  .section-description {
-    text-align: center;
-    font-size: 1.1rem;
-    color: #666;
-    margin-bottom: 3rem;
-  }
-  
-  .blog-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 2.5rem;
-    margin-bottom: 3rem;
-  }
-  
-  .blog-card {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.07);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid rgba(0,0,0,0.04);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .blog-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
-  }
-  
-  .blog-image {
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  max-height: 200px;
-  object-fit: contain;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-  
-  .blog-content {
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-  }
-  
-  .blog-category {
-    display: inline-block;
-    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-    color: var(--dark);
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    align-self: flex-start;
-  }
-  
-  .blog-title {
-    font-size: 1.3rem;
-    margin-bottom: 0.8rem;
-    font-weight: 600;
-    color: var(--dark);
-    line-height: 1.4;
-  }
-  
-  .blog-excerpt {
-    color: #666;
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-    flex-grow: 1;
-  }
-  
-  .blog-link {
-    color: var(--accent);
-    text-decoration: none;
-    font-weight: 600;
-    display: inline-flex;
-    align-items: center;
-    transition: all 0.2s ease;
-    margin-top: auto;
-  }
-  
-  .blog-link i {
-    margin-left: 0.5rem;
-    transition: transform 0.2s ease;
-  }
-  
-  .blog-link:hover {
-    color: var(--accent-dark);
-  }
-  
-  .blog-link:hover i {
-    transform: translateX(4px);
-  }
-  
-  .view-all-container {
-    text-align: center;
-    margin-top: 1rem;
-  }
-  
-  .view-all-button {
-    display: inline-block;
-    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
-    color: white;
-    padding: 0.8rem 2rem;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(255, 64, 129, 0.2);
-  }
-  
-  .view-all-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(255, 64, 129, 0.3);
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .blog-cards {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-    }
     
-    .section-title {
-      font-size: 1.8rem;
-    }
-    
-    .section-description {
-      font-size: 1rem;
-      margin-bottom: 2rem;
-    }
-  }
-  </style>
+    <div class="view-all-container">
+      <a href="blogs.html" class="view-all-button">View All Articles</a>
+    </div>
+  </div>
+</section>
 <footer>
 <div class="container">
 <div class="social-links">
@@ -920,6 +908,71 @@ footer {
   const sampleDeals = [
     {
       id: 1,
+      title: "Vivo T4x 5G",
+      description: "Get the Vivo T4x 5G with Snapdragon 6 Gen 1, 50MP camera, and 6000mAh battery—perfect for gaming and daily use.",
+      originalPrice: 17999,
+      currentPrice: 12999,
+      discount: "28%",
+      image: "vivo-t4x-5g.png",
+      category: "Tech",
+      link: "https://fkrt.co/VivoT4xDeal",
+      createdAt: "2025-05-14",
+      expiry: "2025-05-21"
+    },
+    {
+      id: 2,
+      title: "Samsung Galaxy M35 5G",
+      description: "Enjoy the Samsung Galaxy M35 5G with Exynos 1380, 6.6-inch AMOLED display, and 6000mAh battery—vibrant visuals and long-lasting power.",
+      originalPrice: 19999,
+      currentPrice: 14999,
+      discount: "25%",
+      image: "samsung-galaxy-m35-5g.png",
+      category: "Tech",
+      link: "https://fkrt.co/SamsungM35Deal",
+      createdAt: "2025-05-14",
+      expiry: "2025-05-21"
+    },
+    {
+      id: 3,
+      title: "Poco M6 Pro 5G",
+      description: "Poco M6 Pro 5G offers Snapdragon 4 Gen 2, 50MP dual camera, and 5000mAh battery with 18W fast charging—value-packed performance.",
+      originalPrice: 14999,
+      currentPrice: 10999,
+      discount: "27%",
+      image: "poco-m6-pro-5g.png",
+      category: "Tech",
+      link: "https://fkrt.co/PocoM6ProDeal",
+      createdAt: "2025-05-14",
+      expiry: "2025-05-21"
+    },
+    {
+      id: 4,
+      title: "Motorola G45 5G",
+      description: "Motorola G45 5G features Snapdragon 6s Gen 1, 6.5-inch 120Hz display, and 5000mAh battery—smooth performance at a budget price.",
+      originalPrice: 16999,
+      currentPrice: 11999,
+      discount: "29%",
+      image: "motorola-g45-5g.png",
+      category: "Tech",
+      link: "https://fkrt.co/MotoG45Deal",
+      createdAt: "2025-05-14",
+      expiry: "2025-05-21"
+    },
+    {
+      id: 5,
+      title: "Redmi 13C 5G",
+      description: "Redmi 13C 5G with MediaTek Dimensity 6100+, 50MP AI camera, and 5000mAh battery—reliable and affordable 5G experience.",
+      originalPrice: 15999,
+      currentPrice: 11499,
+      discount: "28%",
+      image: "redmi-13c-5g.png",
+      category: "Tech",
+      link: "https://fkrt.co/Redmi13CDeal",
+      createdAt: "2025-05-14",
+      expiry: "2025-05-21"
+    },
+    {
+      id: 6,
       title: "CMF by Nothing Buds",
       description: "Experience 42dB active noise cancellation, ultra bass, and 35.5 hours of playtime—ultimate sound on a budget.",
       originalPrice: 2999,
@@ -931,7 +984,7 @@ footer {
       createdAt: "2025-04-20"
     },
     {
-      id: 2,
+      id: 7,
       title: "moto buds with Hi-Res Audio",
       description: "Enjoy Hi-Res Audio with powerful 12.4mm drivers, 42-hour playback, and IPX4 splash resistance—built for quality and endurance.",
       originalPrice: 7999,
@@ -943,7 +996,7 @@ footer {
       createdAt: "2025-04-20"
     },
     {
-      id: 3,
+      id: 8,
       title: "OnePlus Nord Buds 2r",
       description: "Dual mics with AI noise cancellation, 12.4mm drivers, 38-hour battery life, and IP55 water resistance—clear calls and powerful sound in a compact design.",
       originalPrice: 2299,
@@ -955,30 +1008,29 @@ footer {
       createdAt: "2025-04-20"
     },
     {
-  id: 4,
-  title: "Mi Buds 5C",
-  description: "​Experience up to 40dB hybrid ANC, quad-mic AI calling, 12.4mm titanium drivers, 36-hour battery life, customizable EQ, and IP54 splash resistance—premium features at an unbeatable price.",
-  originalPrice: 4499,
-  currentPrice: 1799,
-  discount: "61%",
-  image: "Mi Buds 5C with 40dB Hybrid ANC, Quad-Mic AI Calling, 36 hrs Playtime, 4 EQ+Custom Bluetooth.png",
-  category: "Tech",
-  link: "https://fkrt.co/Fs5Gz7",
-  createdAt: "2025-04-20" // Newest deal
-},
-   {
-  id: 5,
-  title: "realme Buds T310",
-  description: "​Enjoy 46dB hybrid ANC, 12.4mm bass drivers, 360° spatial audio, 40-hour battery life, and IP55 water resistance—premium features at a budget-friendly price.​",
-  originalPrice: 3999,
-  currentPrice: 2199,
-  discount: "45%",
-  image: "realme Buds T310 with 12.4mm Driver, 46dB ANC, Spatial Audio and upto 40 hours Playback Bluetooth.jpg",
-  category: "Tech",
-  link: "https://fkrt.co/YNPzTb",
-  createdAt: "2025-04-20" // Newest deal
-}
-    // Add more deals with createdAt dates as needed
+      id: 9,
+      title: "Mi Buds 5C",
+      description: "Experience up to 40dB hybrid ANC, quad-mic AI calling, 12.4mm titanium drivers, 36-hour battery life, customizable EQ, and IP54 splash resistance—premium features at an unbeatable price.",
+      originalPrice: 4499,
+      currentPrice: 1799,
+      discount: "61%",
+      image: "Mi Buds 5C with 40dB Hybrid ANC, Quad-Mic AI Calling, 36 hrs Playtime, 4 EQ+Custom Bluetooth.png",
+      category: "Tech",
+      link: "https://fkrt.co/Fs5Gz7",
+      createdAt: "2025-04-20"
+    },
+    {
+      id: 10,
+      title: "realme Buds T310",
+      description: "Enjoy 46dB hybrid ANC, 12.4mm bass drivers, 360° spatial audio, 40-hour battery life, and IP55 water resistance—premium features at a budget-friendly price.",
+      originalPrice: 3999,
+      currentPrice: 2199,
+      discount: "45%",
+      image: "realme Buds T310 with 12.4mm Driver, 46dB ANC, Spatial Audio and upto 40 hours Playback Bluetooth.jpg",
+      category: "Tech",
+      link: "https://fkrt.co/YNPzTb",
+      createdAt: "2025-04-20"
+    }
   ];
   
   // DOM elements
@@ -1235,7 +1287,7 @@ footer {
         filteredDeals.sort((a, b) => a.currentPrice - b.currentPrice);
         break;
       case 'priceDesc':
-        filteredDeals.sort((a, b) => b.currentPrice - a.currentPrice);
+        filteredDeals.sort((a, b) => b.currentPrice - b.currentPrice);
         break;
       case 'discountDesc':
         filteredDeals.sort((a, b) => {
@@ -1268,6 +1320,6 @@ footer {
   
   // Set "Newest First" as default sort option
   document.getElementById('sort-filter').value = 'newest';
-  </script>
+</script>
 </body>
 </html>
